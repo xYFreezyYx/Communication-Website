@@ -1,0 +1,114 @@
+html, body{
+    margin: 0;
+    font-size: 20px;
+    font-family: Comic Sans MS;
+    color: #cdd9e5;
+    background-color: #22272e;
+}
+
+header{
+    height: 50px;
+    width: 100%;
+    background-color: #2d333b;
+    box-shadow: 0px 0px 15px #2d333b;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+input[type="text"]{
+    background-color: rgba(255, 255, 255, 0.646);
+    cursor: text;
+    border-radius: 10px;
+    border-color: transparent;
+    color: rgb(0, 48, 73);
+    font-family: Comic Sans MS;
+    font-size: 18px;
+}
+
+input::placeholder{
+    font-family: Comic Sans MS;
+    font-size: 14px;
+    color: rgb(99, 99, 99);
+}
+
+input:focus{
+    outline: none;
+}
+
+input[type="button"]{
+    border-radius: 10px;
+    margin-right: 15px;
+    border-color: transparent;
+    color: rgb(0, 48, 73);
+    background-color: rgba(255, 255, 255, 0.646);
+    font-size: 18px;
+    font-family: Comic Sans MS;
+    text-align: center;
+    cursor: pointer;
+}
+
+input[type="button"]:hover{
+    background-color: #ec775c;
+}
+
+header > div > h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+header > div > h1 > span{
+    color: #ce8989;
+}
+
+
+
+
+
+
+
+.modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content{
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  .animate{
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom{
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom{
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
