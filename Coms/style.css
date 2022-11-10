@@ -23,8 +23,8 @@ header > div{
     align-items: center;
 }
 
-input[type="text"]{
-    background-color: rgba(255, 255, 255, 0.646);
+input[type="text"], input[type="password"]{
+    background-color: rgb(200, 200, 200);
     cursor: text;
     border-radius: 10px;
     border-color: transparent;
@@ -43,9 +43,12 @@ input:focus{
     outline: none;
 }
 
-input[type="button"]{
+input[type="button"], input[type="submit"]{
     border-radius: 10px;
+    margin-left: 15px;
     margin-right: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
     border-color: transparent;
     color: rgb(0, 48, 73);
     background-color: rgba(255, 255, 255, 0.646);
@@ -55,7 +58,7 @@ input[type="button"]{
     cursor: pointer;
 }
 
-input[type="button"]:hover{
+input[type="button"]:hover, input[type="submit"]:hover{
     background-color: #ec775c;
 }
 
@@ -64,38 +67,94 @@ header > div > h1{
     font-weight: bold;
     margin-left: 15px;
     margin-right: 15px;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+}
+
+header > div > input[type="text"]{
+    margin-top: 5px;
+    margin-right: 15px;
+    margin-bottom: 5px;
 }
 
 header > div > h1 > span{
     color: #ce8989;
 }
 
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.main-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 
+    width: 90%;
+    height: 500px;
+}
 
+.main-right{
+    display: flex;
+    flex-direction: column;
 
+    width: 10%;
+}
 
+.File-Container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+iframe{
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > label{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.container > input[type="button"]{
+    margin-top: 10px;
+}
+
+.container > input[type="text"], .container > input[type="password"]{
+    margin-bottom: 20px;
+}
 
 .modal{
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
-    padding-top: 60px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 100px;
   }
   
-  /* Modal Content/Box */
   .modal-content{
-    background-color: #fefefe;
-    margin: 5px auto; /* 15% from the top and centered */
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    background-color: #2d333bc0;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #2d333bc0;
+    width: 300px;
   }
 
   .animate{

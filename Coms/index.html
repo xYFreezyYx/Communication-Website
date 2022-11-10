@@ -7,44 +7,46 @@
     <title>UpComs</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="testplatform.js" defer></script>
     <script type="text/javascript" src="main.js" defer></script>
 </head>
 <body>
-    <div id="id01" class="modal">
+    <div id="Login-form" class="modal">
         <form class="modal-content animate">
-          <div class="imgcontainer">
-            <img alt="Avatar" class="avatar">
-          </div>
-      
           <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+            <label for="email">Email:</label>
+            <input type="text" placeholder="Enter email" id="email" required>
       
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-      
-            <button type="submit">Login</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember"> Remember me</label>
-          </div>
-      
-          <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
+            <label for="pass">Password:</label>
+            <input type="password" placeholder="Enter Password" id="pass" required>
+
+            <input type="submit" value="Login">
           </div>
         </form>
     </div>
-    <header>
+    <header class="Nav">
         <div id="div1head">
             <h1><span>Up</span>Coms</h1>
             <input type="text" placeholder="Search...">
         </div>
         <div id="div2head">
-            <input type="button" value="LogIn" onclick="document.getElementById('id01').style.display='block'">
+            <input type="button" value="Login" onclick="document.getElementById('Login-form').style.display='block'">
         </div>
-    </header>
+    </header> 
     <main>
-
+        <section class="main-left">
+            <h3>Recently added files:</h3>
+            <div class="File-Container">
+                <iframe src="Prakt_darbs_5.pdf#toolbar=0" frameborder="0" width="300px" height="200px"></iframe>
+                <iframe src="Prakt_darbs_5.pdf#toolbar=0" frameborder="0" width="300px" height="200px"></iframe>
+            </div>
+        </section>
+        <div class="main-right">
+            <h3>Friends: </h3>
+            <div class="user-1">
+                <h5>Aleks</h5>
+            </div>
+        </div>
     </main>
 </body>
 </html>
