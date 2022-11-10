@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UpComs</title>
+    <title>UpWorked</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="testplatform.js" defer></script>
@@ -24,9 +24,14 @@
           </div>
         </form>
     </div>
+    <div id="Zoom-in" class="modal1">
+        <form class="modal-content1 animate">
+            <iframe src="Prakt_darbs_5.pdf#toolbar=0" frameborder="0" width="100%" height="100%"></iframe>
+        </form>
+    </div>
     <header class="Nav">
         <div id="div1head">
-            <h1><span>Up</span>Coms</h1>
+            <h1><span>Up</span>Worked</h1>
             <input type="text" placeholder="Search...">
         </div>
         <div id="div2head">
@@ -34,19 +39,21 @@
         </div>
     </header> 
     <main>
-        <section class="main-left">
-            <h3>Recently added files:</h3>
+        <section>
+
+        </section>
+        <section class="All-Files">
             <div class="File-Container">
-                <iframe src="Prakt_darbs_5.pdf#toolbar=0" frameborder="0" width="300px" height="200px"></iframe>
-                <iframe src="Prakt_darbs_5.pdf#toolbar=0" frameborder="0" width="300px" height="200px"></iframe>
+                <div class="frame">
+                    <iframe src="Prakt_darbs_5.pdf#toolbar=0" frameborder="0" width="300px" height="200px"></iframe>
+                    <input type="button" value="Zoom in" onclick="document.querySelector('#Zoom-in').style.display='block'">
+                </div>
+                <div class="frame">
+                    <iframe src="Prakt_darbs_5.pdf#toolbar=0" frameborder="0" width="300px" height="200px"></iframe>
+                    <input type="button" value="Zoom in" onclick="document.querySelector('#Zoom-in').style.display='block'">
+                </div>
             </div>
         </section>
-        <div class="main-right">
-            <h3>Friends: </h3>
-            <div class="user-1">
-                <h5>Aleks</h5>
-            </div>
-        </div>
     </main>
 </body>
 </html>
