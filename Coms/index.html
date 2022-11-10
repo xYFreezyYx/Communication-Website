@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="testplatform.js" defer></script>
     <script type="text/javascript" src="main.js" defer></script>
+    
 </head>
 <body>
     <div id="Login-form" class="modal">
@@ -31,18 +32,29 @@
     </div>
     <header class="Nav">
         <div id="div1head">
-            <h1><span>Up</span>Worked</h1>
+            <h1 onclick="location.reload()"><span>Up</span>Worked</h1>
             <input type="text" placeholder="Search...">
         </div>
         <div id="div2head">
             <input type="button" value="Login" onclick="document.getElementById('Login-form').style.display='block'">
+            <input type="button" value="Friends" onclick="FriendsList()">
         </div>
     </header> 
     <main>
-        <section>
-
+        <section class="Toolbar">
+            <input type="button" value="Mathematics">
+            <input type="button" value="Physics">
+            <input type="button" value="English">
+            <input type="button" value="Programming" onclick="Prgoramming()">
+            <input type="button" value="Sports">
+            <input type="button" value="Biology">
         </section>
-        <section class="All-Files">
+        <section class="Info">
+            <P>
+                The site is for students to exchange files and get help for tasks. <br> Teachers can get feedback on the tasks of other teachers, analyze how students see tasks and their thinking process.
+            </P>
+        </section>
+        <section class="All-Files" style="display: none;">
             <div class="File-Container">
                 <div class="frame">
                     <iframe src="Prakt_darbs_5.pdf#toolbar=0" frameborder="0" width="300px" height="200px"></iframe>
@@ -55,5 +67,31 @@
             </div>
         </section>
     </main>
+    <section class="F-List" id="Closed">
+        <div class="Start">
+            <h2>Friends List</h2>
+            <div class="Friend">
+                <div>
+                    <img src="panda.png">
+                    <h3>Freezy</h3>
+                </div>
+            </div>
+            <div class="Friend">
+                <div>
+                    <img src="Avatar.png">
+                    <h3>Osaki</h3>
+                </div>
+            </div>
+            <div class="Friend">
+                <div>
+                    <img src="Avatar.png">
+                    <h3>Reinnis</h3>
+                </div>
+            </div>
+        </div>
+        <div class="End">
+            <input type="button" value="Add Friend">
+        </div>
+    </section>
 </body>
 </html>
